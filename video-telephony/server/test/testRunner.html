@@ -1,0 +1,41 @@
+<!--
+        CEF
+        WebRTC Plugin
+        Copyright 2015
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Jasmine Check</title>
+        <link rel="stylesheet" type="text/css" href="./lib/jasmine-1.3.1/jasmine.css">
+        <script type="text/javascript" src="../common/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./lib/jasmine-1.3.1/jasmine.js"></script>
+        <script type="text/javascript" src="./lib/jasmine-1.3.1/jasmine-html.js"></script>
+        <script type="text/javascript" src="./lib/jasmine-reporters/jasmine.phantomjs-reporter.js"></script>
+        <!-- include source files here... -->
+        <script>
+            siteAdminID = 120
+        </script>
+        <script type="text/javascript" src="../video-plugin/videoPlugin.js"></script>
+        <style>
+            #webRTC_customerVideoPlugin{
+                display: none;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- include spec files here... -->
+        <script type="text/javascript" src="./js/videoPluginTest.js"></script>
+        
+        
+        <script type="text/javascript">
+            jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+            jasmine.getEnv().addReporter(new jasmine.PhantomJSReporter());
+            jasmine.getEnv().execute();
+        </script>
+    </body>
+</html>

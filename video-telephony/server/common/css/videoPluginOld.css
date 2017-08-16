@@ -1,0 +1,144 @@
+.video-container {
+    width: 400px;
+    position: fixed;
+    max-width: 85%;
+    height: 540px;
+    bottom: 0px;
+    right: 15px;
+    background: #fcfcfc;
+    z-index: 9999;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid #e1e1e1;
+}
+.sub-header {
+    width: 99%;
+    height: 40px;
+    background-color: #3498db;
+    color: #ffffff;
+    padding-top: 1%;
+    padding-left:1%;
+    border-radius: 10px 10px 0px 0px;
+}
+.remote-vedio-container{
+    width: 94%;
+    height: 50%;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 5px;
+    border: 1px solid #3399cc;
+    visibility: visible;
+    border-radius: 5px 5px 0px 0px;
+}
+.local-video-container {
+    width: 40%;
+    height: 140px;
+    width: 189px;
+    border: 1px solid #3399cc;
+    visibility: visible;
+    border-radius: 0px 3px 0px 0px;
+    position: absolute;
+    bottom: -116px;
+    left: -1px;
+}
+.blue-header{
+    background: #3399cc;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+#chatClose,#closeChatWindow{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ccc;
+    font-family: cursive;
+}
+#agentsubheader-title span{
+    font-family: serif;
+    line-height: 33px;
+}
+#agentsubheader-title img,#startCallDiv img{
+    margin:8px 0px 0px 8px;
+    cursor: pointer;
+}
+.end-call-button {
+    background-color: #FF9E93;
+    cursor: pointer;
+    color: #333;
+    font-family: sans-serif;
+    position: relative;
+    visibility: visible;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    margin-left: 6px;
+    transition: all 0.5s ease;
+    display: none;
+}
+.end-call-button:hover{
+    background-color: #ccc;
+    color: #333;
+}
+#chatparentdiv {
+    position: absolute;
+    bottom: -2px;
+    left: -262px;
+    width: 260px;
+}
+#chatdiv {
+    width: 100%;
+    border: 1px solid #3399cc;
+    display: none;
+    border-radius: 5px 5px 0px 0px;
+    background: #EDEAE8;
+    border-bottom: 0px;
+}
+#webRTC_chatwindow {
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    height: 170px;
+    list-style-type: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.chat-window li{
+    font-size: 13px;
+    font-family: arial;
+}
+.chat-send-btn {
+    background-color: #3399cc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 1px 0px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    width: 60px;
+    height: 20px;
+    font-family: arial;
+    margin: 5px 0px; 
+}
+.video-container-draggable{
+    cursor: move;
+}
+#webRTC_chattext {
+    border: 0px;
+    outline: 0px;
+    width: 96%;
+    padding: 20px 2%;
+}
+.webRTC_icon{
+    width: 20px;
+    height: 18px;
+    margin-left: 7px;
+    margin-top: 7px;
+    cursor: pointer;
+}

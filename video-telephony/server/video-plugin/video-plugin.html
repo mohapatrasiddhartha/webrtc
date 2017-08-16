@@ -1,0 +1,42 @@
+<aside id="webRTC_video-plugin">
+    <section class="webRTC_main-header">
+        <input type="text" id="webRTC_custName" class="webRTC_left" autofocus placeholder="Enter your name">
+        <button name="startCallButton" type="submit" id="webRTC_custStartCallButton" class="webRTC_left webRTC_button">Start Call</button>
+        <button type="submit"  id="webRTC_custEndCallButton" class="webRTC_left webRTC_button">End Call</button>
+        <img id ="webRTC_openchat" src="http://10.203.2.198:8040/Customer/img/chat.png" class="webRTC_icon left"/>
+        <img id ="webRTC_audiostatus" src ="http://10.203.2.198:8040/Customer/img/audioplay.png" class="webRTC_icon left">
+        <img id ="webRTC_videostatus" src ="http://10.203.2.198:8040/Customer/img/videoplay.png" class="webRTC_icon left">
+    </section>
+    <section class="webRTC_main-video-wrapper" id="webRTC_VideoWrapper">
+        <h3 class="webRTC_sub-heading" id="webRTC_agentHeader"> Agent</h3>
+        <div id="webRTC_connectMessage">
+            <h5 id="webRTC_connectMessageInfo">Connecting ... Please Wait...</h5>
+            <img src="http://10.203.2.198:8040/Customer/img/progressbar.gif" id="webRTC_connectProgressbar" />
+        </div>
+        <video id = "webRTC_remoteVideo" autoplay></video>
+        <div class = "webRTC_local-video" id="webRTC_LocalVideoWrapper">
+            <h3 class="webRTC_sub-heading">Customer</h3>    
+            <video id = "webRTC_localVideo" autoplay muted="muted"></video>
+        </div>
+    </section>
+    <div id="webRTC_chatparentdiv">
+        <form method="post" action="#">
+            <div id="webRTC_chatdiv">
+                <h3 id="webRTC_chatheader" class="webRTC_sub-heading">
+                    <span>CHAT</span>
+                    <a href="javascript:void(0)" id="webRTC_chatClose">X</a>
+                </h3>   
+                <ul id="webRTC_chatwindow" class="webRTC_chat-window"></ul>
+                <input id ="webRTC_chattext" type ="text" placeholder="Enter your text here">
+                <button type="submit" class="webRTC_chat-send-btn" id="webRTC_chatsendButton">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</aside>
+<link href="http://10.203.2.198:8040/common/css/videoPlugin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src ="http://10.203.2.198:8040/common/js/jquery-ui.js" ></script>
+<script type="text/javascript" src ="http://10.203.2.198:8040/common/js/client.js" ></script>
+<script type="text/javascript" src="http://10.203.2.198:8040/Customer/js/eventListener.js"></script>
+<script type="text/javascript" src ="http://10.203.2.198:8040/Customer/js/customerCall.js" ></script>

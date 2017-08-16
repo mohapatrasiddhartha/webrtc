@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Telephony</title>
+        <link rel="stylesheet" href="../common/css/themeDefault.css">
+        <link href="css/clientstyle.css" rel="stylesheet" type="text/css">
+        <!--<link href="../common/css/videoPlugin.css" rel="stylesheet" type="text/css">-->
+        <script src="../common/js/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body id="clientbody">
+        <header id="header">
+            <div class="container">
+                <a class="logo left" href="javascript:void(0)">
+                    <img src="../common/images/logo_img.png" height="80" width="80" class="left" />
+                    Ford Customer Service
+                </a>
+                <div class="right">
+                    <a href="javascript:void(0)" class="right" id="liveChat">Live Chat</a>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="clientHome">
+            <div class="client-banner">
+                <div class="text-box">
+                    <p>Live Chat With Us</p>
+                    <span>Ford Customer Help Desk</span>
+                </div>
+            </div>          
+        </div>
+        <script>
+            $(function () {
+                var localhosturl=window.location.origin;
+                var webRTCScript = document.createElement("script"), 
+                    webRTCScriptName = document.getElementsByTagName("script")[0];
+                webRTCScript.async = true;
+                webRTCScript.src = localhosturl+'/video-plugin/videoPlugin.js';
+                webRTCScript.charset = 'UTF-8';
+                webRTCScript.setAttribute('crossorigin', '*');
+                webRTCScriptName.parentNode.insertBefore(webRTCScript, webRTCScriptName);
+                siteAdminID='120';
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color:#ffffff;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+img12{
+    margin: 20px;
+    width: 300px;
+}
+.myButton {
+    width: 2%;
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    background-color:#599bb3;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:1px 2px;
+    text-align: center;
+    text-decoration:none;
+    margin:0 20px 0px 0;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.changePasswordButton {
+    width: 2%;
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    background-color:#599bb3;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:1px 2px;
+    text-align: center;
+    text-decoration:none;
+    margin:0px 0px 0px 0px;
+    text-shadow:0px 1px 0px #3d768a;
+}
+#agentlistdiv {
+    display: inline-block;
+    margin:0 auto;
+    height:100%;
+    width:0%;
+    overflow-y:auto
+}
+
+#chatparentdiv {
+    margin-top:10px;
+    width:45%;
+    height:20%;
+    margin-left:10px;
+    float:left;	
+}
+#chatwindow {
+    margin: 0px auto;
+    width:100%;
+    position: relative;
+    text-align:left;
+}
+#chatdiv {
+    margin: 0px auto;
+    width:100%;
+    position: relative;
+    border:1px solid black
+}
+#chattext{
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#cam{
+    width: 920px;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+}
+
+#cam img{
+    width: 300px;
+    box-shadow: 1px 1px 1px #2A2A2A;
+}
+
+#cam p{
+    margin-top: 0px;
+}
+#cam1{
+    float: left;
+    margin-left: 0px;
+}
+
+#cam2{
+    float: left;
+    margin-left: 0px;
+}
+
+#cam1 video{
+    margin: 5px;
+    background: url(../img/cam1.jpg) no-repeat;
+}
+
+#cam2 video{
+    margin: 2px;
+    background: url(../img/cam2.jpg) no-repeat;
+}
+#status {
+    position: absolute;
+    font-family: Helvetica, Arial, sans-serif;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #3F3F3F;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+#remotevidoediv {
+    width:60%;
+    height:40%;
+    margin: 0 auto; 
+    position: relative;	
+    margin-top: 5%;
+    border:1px solid black;
+}
+
+
+
+#videodivs {
+    width:100%;	
+    text-align:center;
+    height: 90%;
+    float: right;
+    right: 0%;
+
+}
+#localvidoediv {
+    width:40%;
+    height:30%;
+    float:left;
+    position: relative;
+    margin-left:10px;
+    margin-top: 10px;
+    border:1px solid black;
+}​
+
+#remotevid {
+    position: relative;  
+    margin: 0 auto; 
+    height:40%;
+    width:50%;
+}
+#sourcevid {
+    position: relative;       
+    margin: 0 auto; 
+    height:85%;
+    width:100%;;
+}
+
+#acceptCallButton {
+    background-color:#44c767;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:14px;
+    padding:1px 0px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+#transferCallButton {
+    background-color:#44c767;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:12px;
+    padding:1px 0px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+#chatsendButton {
+    background-color:#44c767;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    border:1px solid #FF0000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:12px;
+    padding:1px 0px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+#agentEndCallButton {
+    background-color:#FF0000;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    border:1px solid #FF0000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:14px;
+    padding:1px 0px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+.acceptCallButton:hover {
+    background-color:#5cbf2a;
+}
+.acceptCallButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+#buttondiv
+{
+    text-align: center;
+    height:15%;
+    position:relative;
+    margin: 0 auto;
+}
+#inputfieldset{
+    right: 5%;
+    bottom: 35%;
+    position: absolute;
+    border-collapse:separate; 
+    border-spacing:1em;
+    border:1px;
+}
+
+#dropdown{
+    right: 6%;
+    bottom: 50%;
+    position: absolute;
+    border-collapse:separate; 
+    border-spacing:1em;
+    border:1px;
+}
+
+
+#changepassword-box input {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+}
+
+
+
+#changepassword-box {
+    margin: 50px auto;
+    width: 500px;
+}
+
+
+
+
+#changepassword-box fieldset {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 16px;
+}
+
+#changepassword-box fieldset p {
+    color: #0000;
+    margin-bottom: 14px;
+}
+
+#changepassword-box fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#changepassword-box fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#changepassword-box fieldset input[type="text"], #changepassword-box fieldset input[type="password"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#changepassword-box fieldset input[type="submit"] {
+    background-color: #1E90FF;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}

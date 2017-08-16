@@ -1,0 +1,19 @@
+document.getElementById("agentLogout").addEventListener("click",Logout);
+document.getElementById("changeAccntPasword").addEventListener("click",changeAgentPassword);
+document.getElementById("audiostatus").addEventListener("click",enableAudio);
+document.getElementById("videostatus").addEventListener("click",enableVideo);
+document.getElementById("acceptCallButton").addEventListener("click",agentAcceptCall);
+document.getElementById("agentEndCallButton").addEventListener("click",function(){
+    agentCall.agentEndCall();
+});
+document.getElementById("agentrole").addEventListener("change",showAgents);
+document.getElementById("transferCallButton").addEventListener("click",transferClick);
+document.getElementById("agentPasswordReqst").addEventListener("click",onChangePasswordCancel);
+document.getElementById("agentPassworddone").addEventListener("click",onChangePasswordDone);
+document.getElementById("openchat").addEventListener("click",startChatWindow);
+document.getElementById("closeChatWindow").addEventListener("click",closeChatWindow);
+document.getElementById("chatsendButton").addEventListener("click",function(event){
+    sendMessageInfo();
+    event.preventDefault();
+});
+

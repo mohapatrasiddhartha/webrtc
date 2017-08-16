@@ -1,0 +1,41 @@
+html,
+body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+header #liveChat{
+    position: relative;
+    top: 20px;
+    padding: 12px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #3498db;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+header #liveChat:hover{
+    background: #334551 !important;
+    color: #eee;
+}
+.icici_chatHeader{
+    width: 99%;
+    height: 40px;
+    background-color: #BA7C4E;
+    color: #ffffff;
+    padding-top: 1%;
+    padding-left:1%;
+    border-radius: 10px 10px 0px 0px;
+}
+.icici_chatSubHeader{
+    background-color: #BA7C4E;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin: 0px;
+}

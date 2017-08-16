@@ -1,0 +1,67 @@
+body{
+    background: url('../images/background.png') repeat !important;
+}
+.main-login-box{
+    background: #fff;
+    padding:10px 15px;
+    box-shadow: 0px 0px 25px rgba(78,166,229,.5);
+    width:450px;
+    position: relative;
+    margin: 100px auto;
+    max-width: 95%;
+}
+.main-login-box h2{
+    margin: 0px;
+    background: #3399cc;
+    padding: 15px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3%;
+}
+.main-login-box form{
+
+}
+#triangle{
+    width: 0;
+    border-top: 25x solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #3399cc;
+    border-left: 25px solid transparent;
+    position: absolute;
+    top:-15px;
+    left:45%;
+}
+.main-login-box input[type='text'],.main-login-box input[type='password'],.main-login-box select{
+    width: 93.5%;
+    background: #fff;
+    margin: 2.5% 0px;
+    border: 1px solid #ccc;
+    padding: 1.5% 3%;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 94%;
+    color: #555;
+    outline: 0px;
+    /*-webkit-transition: border .3s;*/
+}
+.main-login-box input[type='text']:focus,.main-login-box input[type='password']:focus,.main-login-box select:focus{
+    border: 1px solid rgba(78,166,229,0.4);
+    box-shadow: 0px 0px 13px rgba(78,166,229,.5);
+}
+.main-login-box input[type='submit']{
+    width: 100%;
+    background: #3399cc;
+    border: 0;
+    padding: 2% 4%;
+    margin-top: 6%;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+.main-login-box input[type='submit']:hover{
+    background:#2288bb;
+}

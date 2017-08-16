@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Admin Home</title>
+        <link rel="stylesheet" href="css/adminhome.css">
+        <link rel="stylesheet" href="css/passwordpopup.css">
+        <link rel="stylesheet" href="../common/css/themeDefault.css">
+        <link rel="stylesheet" href="../common/css/popup.css">
+        <script type="text/javascript" src="../common/js/jquery.min.js"></script>
+        <script type="text/javascript" src ="../common/js/AgentsInfo.js" ></script>	
+        <script type="text/javascript" src ="../common/js/SHA1.js" ></script>	
+        <script type="text/javascript" src ="../common/js/Authentication.js" ></script>
+        <script type="text/javascript" src ="js/adminHome.js" ></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <a class="logo left" href="javascript:void(0)">
+                    <img src="../common/images/logo_img.png" height="80" width="80" class="left" />
+                    Live Support WebRTC
+                </a>
+                <div class="right">
+                    <a href="javascript:void(0)" class="btn-default right" id="adminLogout">Logout</a> 
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="client-banner">
+            <div class="text-box">
+                <p>Live Chat With Us</p>
+                <span>Admin Help Desk</span>
+            </div>
+        </div>
+        <div class="container" id="mainAdmin">
+            
+            <nav id="sideBarMenu" class="left">
+                <ul>
+                    <li>
+                        <h4 class="selected">Agent</h4>
+                        <ul>
+                            <li>
+                                <h5 id="adminAddAgent">Add Agent</h5>
+                            </li>
+                            <li>
+                                <h5 id="viewAgentLists">View Agent Info</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Role</h4>
+                        <ul>
+                            <li>
+                                <h5 id="adminAddNewRole">Add Role</h5>
+                            </li>
+                            <li class="not-implemented">
+                                <h5>Edit Role</h5>
+                            </li>
+                            <li class="not-implemented">
+                                <h5>View Roles</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Department</h4>
+                        <ul>
+                            <li>
+                                <h5 id="adminAddDepartment">Add Department</h5>
+                            </li>
+                            <li class="not-implemented">
+                                <h5>Delete Department</h5>
+                            </li>
+                            <li class="not-implemented">
+                                <h5>View Departments</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Call Logs</h4>
+                        <ul>
+                            <li>
+                                <h5 id="viewAgentCallLogs">Agent and Customer Call Lists</h5>
+                            </li>
+                            <li class="not-implemented">
+                                <h5>Advance Queries</h5>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="AdminHome" class="right">
+                <div id="agentlisttablediv">
+                    <div id="userlist">
+
+                    </div>
+                </div>
+                <!--call logs table div start -->
+                <div id="calllisttablediv">
+                    <div id="calllist"></div>
+                </div>
+                <!--call logs table div end -->
+                <div id="addAgent-box" class="addAgent-popup popup-screen left">
+                    <a href="#" id = "closeAgentbutton" class="close">
+                        <img src="./img/close_pop.png" class="btn_close" title="Close Window" alt="Close" />
+                    </a>
+                    <form method="post" class="addAgent" action="#">
+                        <fieldset class="textbox">
+                            <label class="AgentName">
+                                <span>Agent Name</span>
+                                <input id="agentname" name="agentname"  value="" type="text" autocomplete="on" placeholder="">
+                            </label>
+                            <label class="AgentRole">
+                                <span>Agent Role</span>
+                                <select id ="agentrole">
+                                    <option value="default" selected>Default</option>
+                                </select>
+                            </label>
+                            <label class="AgentDepartment">
+                                <span>Agent Department</span>
+                                <div id ="depts"></div>
+                            </label>
+                            <input type="hidden" id = "hiddenAgentId">
+                            <button class="submit button" id="updateAgentbutton" style="display:none" type="button">Update</button>
+                            <button class="submit button" id="addAgentbutton" type="button">Add</button>
+                            <button class="submit button" id="cancelAgentButton" type="button">Cancel</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="role-box" class="addRole-popup popup-screen">
+                    <a href="#" id="closeRuleBoxButton" class="close">
+                        <img src="./img/close_pop.png" class="btn_close" title="Close Window" alt="Close" />
+                    </a>
+                    <form method="post" class="addRole" action="#">
+                        <fieldset class="textbox">
+                            <label class="addAgentRole">
+                                <span>Add Agent Role</span>
+                                <input id="addagentrole" name="addagentrole"  value="" type="text" autocomplete="on" placeholder="" >
+                            </label>
+                            <button class="submit button" id="addRolebutton" type="button">Add Role</button>
+                            <button class="submit button" id="cancelRoleButton" type="button" >Cancel</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="clear"></div>
+                <div id="department-box" class="addRole-popup popup-screen">
+                    <a href="#" id = "closeDepartmentbutton" class="close"><img src="./img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+                    <form method="post" class="adddepartment" action="#">
+                        <fieldset class="textbox">
+                            <label class="addAgentdepartment">
+                                <span>Add Department Name</span>
+                                <input id="addAgentdepartment" name="addAgentdepartment"  value="" type="text" autocomplete="on" placeholder="">
+                            </label>
+                            <button class="submit button" id="addDepartmentbutton" type="button">Add Department</button>					
+                            <button class="submit button" id="cancelDepartmentbutton" type="button">Cancel</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div> <!-- end login -->
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" src="js/eventListener.js"></script>
+    </body>	
+</html>

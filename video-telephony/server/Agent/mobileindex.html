@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Agent Home</title>
+        <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"/>
+        <link rel="stylesheet" href="css/loginpopup.css">
+        <link href="css/commoncss.css" rel="stylesheet" type="text/css" >
+        <link href="../common/css/themeDefault.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="../common/css/themeDefault.css">
+        <link href="css/agentstyle.css" rel="stylesheet" type="text/css" >
+        <link href="../common/css/videoPluginOld.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../common/js/jquery.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <a class="logo left" href="javascript:void(0)">
+                    <img src="../common/images/logo_img.png" height="80" width="80" class="left" />
+                    Live Support WebRTC
+                </a>
+                <a href="javascript:void(0)" class="btn-default right" id="agentLogout">Logout</a>
+                <a href="javascript:void(0)" class="btn-default right" id="changeAccntPasword">Change Password</a>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="client-banner">
+            <div class="text-box">
+                <p>Live Chat With Us</p>
+                <span>Agent Help Desk</span>
+            </div>
+        </div>
+        <div class="container">
+            <div id = "videoviewdiv">
+                <div id="container">
+                    <h2 class="page-title">Live Chat Agents</h2>
+                    <div id="agentlistdiv">
+                        <div id="userlist" ></div>
+                    </div>
+                    <div id ="videodivs" class="video-container">
+                        <div id="agentsubheader" class="sub-header">
+                            <div id="agentsubheader-title">
+                                <span class="left">Agent Support</span>
+                                <img id="openchat" src="img/chat.png" class="left webRTC_icon" />
+                                <img id ="audiostatus" src ="img/audioplay.png" class="left">
+                                <img id ="videostatus" src ="img/videoplay.png" class="left"> 
+                                <button type="Button" id="acceptCallButton" class="left">Accept Call</button>
+                                <input type="hidden" id="agentListhdn">
+                                <button type="Button" id="transferCallButton" class="right">Transfer</button>
+                                <select id="agentrole" class="right"></select>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id = "remotevidoediv" class="remote-vedio-container">
+                            <p id ="customerheader" class="blue-header">
+                                CUSTOMER
+                            </p>
+                            <div id="customerEndCallDiv">
+                                <button type="Button"  id="agentEndCallButton" class="left end-call-button"> End Call </button>
+                            </div>
+                            <div id="ringingimgdiv">
+                                <img src="img/calling.gif" class="center-block" id="ringing" />
+                                <audio id = "audioplay" src = "img/telephone-ring-04.mp3" loop ></audio>
+                            </div>
+                            <video id = "remotevid" autoplay></video>
+                            <div id = "localvidoediv" class="left local-video-container">
+                                <p id="agentheader" class="blue-header">AGENT</p>
+                                <video id = "sourcevid" autoplay muted="muted"></video> 
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="chatparentdiv">
+                            <form action="#" method="post">
+                                <div id="chatdiv">
+                                    <div id="chatheader" class="blue-header"> 
+                                        <span>CHAT</span>
+                                        <a href="javascript:void(0)" id="closeChatWindow">X</a>
+                                    </div>
+                                    <ul id="webRTC_chatwindow" class="chat-window"></ul>
+                                    <input id="webRTC_chattext" type="text" placeholder="Enter your text here"></input>
+                                    <button type="submit" class="right chat-send-btn" id="chatsendButton">Send</button>
+                                    <div class="clear"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="changepassword-box" class="changepassword-popup left">
+                    <a href="#" id = "closebutton" class="close">
+                        <img src="./img/close_pop.png" class="btn_close" title="Close Window" alt="Close" />
+                    </a>
+                    <form method="post" class="changepassword" action="#">
+                        <fieldset class="textbox">
+                            <label class="oldpassword">
+                                <span>Old Password</span>
+                                <input id="agentoldpasswordforchange" name="oldpassword" value="" type="password" autocomplete="on" placeholder="" autofocus>
+                            </label>
+
+                            <label class="newpassword">
+                                <span>New Password</span>
+                                <input id="agentnewpasswordforchange" name="newpassword" value="" type="password" placeholder="">
+                            </label>
+
+                            <label class="confirmpassword">
+                                <span>Confirm Password</span>
+                                <input id="agentconfirmpasswordforchange" name="confirmpassword" value="" type="password" placeholder="">
+                            </label>
+                            <button class="submit button" id="agentPassworddone"  type="button">Update</button>
+                            <button class="submit button" id="agentPasswordReqst" type="button">Cancel</button>
+                        </fieldset>
+                    </form>
+                </div><!-- end popup -->
+            </div>
+        </div>
+        <script src="../common/js/client.js"></script>
+        <script src="../common/js/AgentsInfo.js"></script>
+        <script src="../common/js/SHA1.js"></script>
+        <script src="js/agentCall.js"></script>
+        <script src="js/eventListener.js"></script>
+    </body>
+</html>

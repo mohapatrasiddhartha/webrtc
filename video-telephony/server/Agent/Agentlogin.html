@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/loginpopup.css">
+        <link rel="stylesheet" href="../common/css/loginBox.css">
+        <link rel="stylesheet" href="../common/css/themeDefault.css">
+        <script type="text/javascript" src="../common/js/jquery.min.js"></script>
+        <script type="text/javascript" src ="../common/js/AgentsInfo.js" ></script>
+        <script type="text/javascript" src ="../common/js/SHA1.js" ></script>
+        <script type="text/javascript" src ="../common/js/Authentication.js" ></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <a class="logo left" href="javascript:void(0)">
+                    <img src="../common/images/logo_img.png" height="80" width="80" class="left" />
+                    Live Support WebRTC
+                </a>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="login">
+            <div class="main-login-box">
+                <div id="triangle"></div>
+                <h2>Agent Login</h2>
+                <form method="post" action="#">
+                     <select id="agentCompanyCode">
+                        <option value="120">Ford Cars</option>
+                        <option value="121">Camzone</option>
+                    </select>
+                    <!--<input type="text" id="agentCompanyCode" placeholder="Enter your company code" autofocus>-->
+                    <input type="text" id="agent" placeholder="Enter Agent Name">
+                    <input type="password" id="password" placeholder="password" >
+                    <input type="submit" value="Login" id="loginAgentBtn">
+                </form>
+            </div>
+            <div id="login-box" class="login-popup">
+                <a href="#" id = "closebutton" class="close">
+                    <img src="./img/close_pop.png" class="btn_close" title="Close Window" alt="Close" />
+                </a>
+                <form method="post" class="signin" action="#">
+                    <fieldset class="textbox">
+                        <label class="oldpassword">
+                            <span>Old Password</span>
+                            <input id="agentoldpassword" name="oldpassword" value="" type="password" autocomplete="on" placeholder="" autofocus>
+                        </label>
+                        <label class="newpassword">
+                            <span>New Password</span>
+                            <input id="agentnewpassword" name="newpassword" value="" type="password" placeholder="">
+                        </label>
+
+                        <label class="confirmpassword">
+                            <span>Confirm Password</span>
+                            <input id="agentconfirmpassword" name="confirmpassword" value="" type="password" placeholder="">
+                        </label>
+                        <button class="submit button" type="button" id="agentLoginDone">Login</button>
+                        <button class="submit button" type="button" id="agentLoginCancel">Cancel</button>
+                    </fieldset>
+                </form>
+            </div><!-- end popup -->
+        </div> <!-- end login -->
+        <script type="text/javascript" src="js/agentLogin.js"></script>
+    </body>	
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Admin Provisioning</title>
+        <link rel="stylesheet" type="text/css" href="../common/css/loginBox.css" >
+        <link rel="stylesheet" type="text/css" href="../common/css/themeDefault.css" >
+        <script type="text/javascript" src ="../common/js/AgentsInfo.js" ></script>
+        <script type="text/javascript" src="../common/js/jquery.min.js"></script>
+        <script type="text/javascript" src ="../common/js/SHA1.js" ></script>
+        <script type="text/javascript" src ="../common/js/Authentication.js" ></script>
+    </head>
+    <body >
+        <header id="header">
+            <div class="container">
+                <a class="logo left" href="javascript:void(0)">
+                    <img src="../common/images/logo_img.png" height="80" width="80" class="left" />
+                    Live Support WebRTC
+                </a>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="login">
+            <div class="main-login-box">
+                <div id="triangle"></div>
+                <h2>Admin Provision</h2>
+                <form action="#" method="post">
+                    <select id="agentCompanyCode">
+                        <option value="120">Ford Cars</option>
+                        <option value="121">Camzone</option>
+                    </select>
+                    <input type="text" id="admin" placeholder="Enter User Name" autofocus>
+                    <input type="password" id="password" placeholder="password" >
+                    <input type="submit" value="Login" id="adminLoginBtn">
+                </form>
+            </div>
+
+        </div> <!-- end login -->
+        <script type="text/javascript" src="js/adminProvisioning.js"></script>
+    </body>	
+</html>

@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#custname {
+    /*width: 60px;*/  /*conflicting*/
+    width:200px;
+}
+
+#chatdiv {
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+
+    display:none;
+}
+
+#chatwindow {
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    height: 100px;
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+#chattext {
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#cam {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+}
+
+#cam img {
+    width: 300px;
+    box-shadow: 1px 1px 1px #2A2A2A;
+}
+
+#cam p {
+    margin-top: 0px;
+}
+
+#cam1 {
+    float: left;
+    margin-left: 0px;
+}
+
+#cam2 {
+    float: left;
+    margin-left: 0px;
+}
+
+#cam1 video {
+    margin: 5px;
+    background: url(../img/cam1.jpg) no-repeat;
+}
+
+#cam2 video {
+    margin: 2px;
+    background: url(../img/cam2.jpg) no-repeat;
+}
+
+#clientremotevidoediv {
+    width: 60%;
+    height: 40%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px solid black;
+
+    visibility: visible;
+}
+
+#videodivs {
+    width: 100%;
+    text-align: center;
+    height: 90%;
+    float: right;
+    right: 0%;
+}
+
+#maindiv {
+    width: 60%;
+    height: 70%;
+    display: inline-block;
+}
+
+#localvidoediv {
+    width: 30%;
+    height: 30%;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+
+    visibility: visible;
+}
+
+​ #remotevid {
+    position: relative;
+    margin: 0 auto;
+    height: 40%;
+    width: 50%;
+
+    display:none;
+}
+
+#chatparentdiv {
+    margin-top: 10px;
+    width: 40%;
+    height: 20%;
+    margin-left: 10px;
+    float: left;
+}
+
+#sourcevid {
+    position: relative;
+    margin: 0 auto;
+    height: 85%;
+    width: 100%;
+}
+
+#startCallButton {
+    background-color: #44c767;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    /*font-family: arial;*/ /*conflicting*/
+    font-size: 12px;
+    padding: 1px 0px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+
+    width: 60px; height: 20px;font-family: sans-serif;position:relative;visibility: visible;
+}
+
+.acceptCallButton:hover {
+    background-color: #5cbf2a;
+}
+
+.acceptCallButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#custEndCallButton {
+    background-color: #FF0000;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #FF0000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 12px;
+    padding: 1px 0px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+
+    width: 60px; height: 20px; font-family: sans-serif; position:relative; top:60%; display: none;
+}
+
+#chatsendButton {
+    background-color: #44c767;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #FF0000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 12px;
+    padding: 1px 0px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+
+    width: 60px; height: 20px; font-family: sans-serif; position:relative;top:60%;
+}
+
+.endCallButton:hover {
+    background-color: #5cbf2a;
+}
+
+.endCallButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#bachgroundimg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: 15;
+    top: 30%;
+    left: 37%;
+    background-color: #5cbf2a;
+}
+
+#buttondiv {
+    text-align: center;
+    height: 15%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#inputfieldset {
+    right: 0%;
+    bottom: 30%;
+    position: absolute;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+#updatedfieldset {
+    right: 6%;
+    bottom: 50%;
+    position: absolute;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+#title_bar {
+    background: #FEFEFE;
+    height: 25px;
+    width: 100%;
+}
+
+#button {
+    border: solid 1px;
+    width: 25px;
+    height: 23px;
+    float: right;
+    cursor: pointer;
+}
+
+ p,#chatheader{
+  color:black;
+  background-color: #4682b4 ;
+  font-weight: bold;
+  height:10%;vertical-align:middle;
+  text-align:center;
+  color:#FFFFFF;
+  padding-Top:2%;
+  font-size:12px;
+}
+
+#clientHome{
+    width:99.9%;
+    height:100%;
+}
+
+#header {
+    width: 100%;
+    height: 40px;
+    background-color: #4682b4;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid black;
+    padding-Top: 1%
+}
+
+#subheader {
+    width: 100%;
+    height: 40px;
+    background-color: #4682b4;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1%
+}
+
+#enterNameDiv{
+    padding-bottom: 10px;   
+}
+
+#openchat{
+    width:20px;height:18px;
+}
+
+#audiostatus{
+    width:20px;height:18px;
+}
+
+#videostatus{
+    width:20px;height:18px;
+}
+
+#divprogressbar{
+    position:relative;top:25%;visibility:hidden;
+}
+
+#progressbar{
+    position: relative; width:50px;height:50px;visibility:hidden;
+}

@@ -1,0 +1,88 @@
+/*
+Orange:			EE872A
+Green:			8AC007
+Lightgreen:		e5eecc
+Blue:			40B3DF
+DarkGreyBg:		555555
+LightGreyBg:	F6F4F0
+GreyBorder:		D4D4D4
+DarkGrey :      A9A9A9
+grey            808080
+silver          C0C0C0
+LightGrey       D3D3D3
+Pink:			B4009E
+greenish        98bf21
+*/
+
+table.commonclass
+{
+    width:100%;
+    border-collapse:collapse;
+    margin:0px;
+    position:absolute;
+    overflow-y:scroll;
+    height:99.5%;
+    /*margin-top:1px;top: 75%;
+    background-color:#FFFFFF;*/
+
+}
+
+table.commonclass td{
+    font-size:1em;
+    /*border:1px solid #C0C0C0;*/
+    border-bottom:1px solid #ffffff; 
+    padding:3px 7px 0px 14px;
+    height:40px;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+table.commonclass td:nth-child(1){
+    /*border-right:1px solid #000000;*/
+}
+table.commonclass tr img{
+    vertical-align:middle;
+    height:15px;
+    width:20px;
+}
+table.reference tr:nth-child(odd)	{background-color:#D8D8D8;}
+table.reference tr:nth-child(even)	{background-color:#BDBCBA;}
+table.referenceBlack tr:nth-child(odd)	{background-color:black;}
+table.referenceBlack tr:nth-child(even)	{background-color:black;}
+.bottomRight{
+    vertical-align: bottom;
+    text-align: right;
+    font-size:smaller;
+    font-weight: lighter;
+    position: relative;
+    padding-right: -10px;
+}
+#tableContent{
+    position: absolute;
+    margin-left:0px;
+    margin-top:20px;
+    /*left: 0px;
+top: 57%;
+    width: 100%;
+
+
+    */
+
+}
+#playerArea{	
+    position: fixed;
+    background-color: #808080;
+    height: 52%;
+    width: 100%;
+    top: 40px;
+    /*z-index: 100;*/
+    display:none;
+}
+#content{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 60px; 
+    overflow: scroll;
+} 
